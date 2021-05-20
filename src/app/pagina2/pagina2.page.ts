@@ -11,6 +11,27 @@ export class Pagina2Page implements OnInit {
   constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
+    console.log("ngOnInit: pagina2");
+  }
+
+  ionViewWillEnter(){
+    console.log("ionViewWillEnter: pagina2");
+  }
+
+  ionViewDidEnter(){
+    console.log("ionViewDidEnter: pagina2");
+  }
+
+  ionViewWillLeave(){
+    console.log("ionViewWillLeave: pagina2");
+  }
+
+  ionViewDidLeave(){
+    console.log("ionViewDidLeave: pagina2");
+  }
+
+  ngOnDestroy(){
+    console.log("ngOnDestroy: pagina2");
   }
   goToPagina1(){
     this.navCtrl.navigateForward('/home');

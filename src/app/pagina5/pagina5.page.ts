@@ -11,6 +11,26 @@ export class Pagina5Page implements OnInit {
   constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
+    console.log("ngOnInit: pagina5");
+  }
+   ionViewWillEnter(){
+    console.log("ionViewWillEnter: pagina5");
+  }
+  
+  ionViewDidEnter(){
+    console.log("ionViewDidEnter: pagina5");
+  }
+  
+  ionViewWillLeave(){
+    console.log("ionViewWillLeave: pagina5");
+  }
+  
+  ionViewDidLeave(){
+    console.log("ionViewDidLeave: pagina5");
+  }
+  
+  ngOnDestroy(){
+    console.log("ngOnDestroy: pagina5");
   }
   goToPagina1(){
     this.navCtrl.navigateForward('/home');
